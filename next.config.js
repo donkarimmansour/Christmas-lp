@@ -1,4 +1,4 @@
-import {i18n}  from "./next-i18next.config"
+import { i18n }  from "./next-i18next.config"
 import dotenv  from "dotenv"
 dotenv.config()
 

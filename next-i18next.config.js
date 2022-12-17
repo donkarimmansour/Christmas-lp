@@ -1,5 +1,4 @@
 import path from 'path'
-import { initReactI18next } from "next-i18next"
 
 module.exports = {
     i18n: {

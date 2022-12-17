@@ -1,6 +1,6 @@
 import path from 'path'
 
-const config = {
+export default {
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'ar', 'fr'],
@@ -25,7 +25,5 @@ const config = {
   // debug: process.env.NODE_ENV === 'development',
   localePath: path.resolve('./public/locales'),
   //  ns: ['common'],
+
 }
-
-
-export default config.i18n

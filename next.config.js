@@ -1,5 +1,6 @@
-const {i18n} = require("./next-i18next.config");
-require('dotenv').config()
+import {i18n}  from "./next-i18next.config"
+import dotenv  from "dotenv"
+dotenv.config()
 
 
 module.exports = {

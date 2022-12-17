@@ -1,5 +1,5 @@
-const path = require('path')
-const { initReactI18next } = require("next-i18next")
+import path from 'path'
+import { initReactI18next } from "next-i18next"
 
 module.exports = {
     i18n: {

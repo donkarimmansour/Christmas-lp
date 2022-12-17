@@ -20,10 +20,11 @@ export default {
     // react: { useSuspense: false } ,
     // localeStructure: '{{lng}}/{{ns}}',
 
-
+   
   },
   // debug: process.env.NODE_ENV === 'development',
   localePath: path.resolve('./public/locales'),
-  //  ns: ['common'],
+  //  ns: ['common'] ,
 
 }
+

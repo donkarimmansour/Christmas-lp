@@ -1,7 +1,8 @@
-import { i18n }  from "./next-i18next.config.js"
+import i18n from "./next-i18next.config.js"
 import dotenv  from "dotenv"
 dotenv.config()
 
+console.log(i18n);
 
 module.exports = {
   reactStrictMode: true,

@@ -7,7 +7,7 @@ const HnadleNavToggle = e => {
 const HnadleNavClose = e => {
    e.target.closest("#nav-menu").classList.remove('show-menu')
 }
-
+ 
 const HnadleNavLinks = e => {
    e.target.closest("#nav-menu").classList.remove('show-menu')
 }

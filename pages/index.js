@@ -1,5 +1,5 @@
 
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { NextSeo } from "next-seo"
 import Loader from '../components/Loader';
 import dynamic from 'next/dynamic';
@@ -21,10 +21,7 @@ const Home = () => {
   return (
     <> 
       <NextSeo {...SEO} />
-
-
-
-     <Index />
+       <Index />
 
     </>
   ) 
@@ -34,14 +31,14 @@ const Home = () => {
 export default Home 
 
  
- export async function getServerSideProps({req, locale}) {  
-  // console.log(req.headers["accept-language"]  , locale); 
-  const lcl = req?.cookies?.NEXT_LOCALE || locale 
+//  export async function getServerSideProps({req, locale}) {  
+//   // console.log(req.headers["accept-language"]  , locale); 
+//   const lcl = req?.cookies?.NEXT_LOCALE || locale 
 
-   return { 
-     props: {
-       ...(await serverSideTranslations(lcl, ['common' , 'phone'])),
-     }, 
-   };
- } 
+//    return { 
+//      props: {
+//        ...(await serverSideTranslations(lcl, ['common' , 'phone'])),
+//      }, 
+//    };
+//  } 
   

@@ -4,7 +4,7 @@
 // import getConfig from 'next/config';
 // import { useTranslation } from 'react-i18next';
 
-// const ISG = () => {
+const ISG = () => {
 
 //   const { t } = useTranslation('common')
 
@@ -20,15 +20,15 @@
 //     author : "karim mansour"
 //    }
 
-//   return (
-//     <>
-//       <NextSeo {...SEO } />
-//       {t('t')}
-//     </>
-//   )
-// }
+  return (
+    <>
+       {/* <NextSeo {...SEO } />
+       {t('t')} */}
+    </>
+  )
+}
 
-// export default ISG
+export default ISG
 
 // ISG.propTypes = {
 //   //t: propTypes.func.isRequired,

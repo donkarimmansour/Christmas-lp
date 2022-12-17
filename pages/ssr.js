@@ -4,7 +4,7 @@
 // import getConfig from 'next/config';
 // import { useTranslation } from 'react-i18next';
 
-// const SSR = () => {
+const SSR = () => {
 
 //     const { t } = useTranslation('common')
 
@@ -21,16 +21,16 @@
 //     author : "karim mansour"
 // }
 
-//   return (
-//     <>
-//       <NextSeo {...SEO } />
-//       {t('t')}
+  return (
+    <>
+      {/* <NextSeo {...SEO } />
+      {t('t')} */}
 
-//     </>
-//   )
-// }
+    </>
+  )
+}
 
-// export default SSR
+export default SSR
 
 // SSR.propTypes = {
 //   //t: propTypes.func.isRequired,

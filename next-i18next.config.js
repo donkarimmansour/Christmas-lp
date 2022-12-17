@@ -24,7 +24,7 @@ export default {
   },
   // debug: process.env.NODE_ENV === 'development',
   localePath: path.resolve('./public/locales'),
-  //  ns: ['common'] ,
+  //  ns: ['common'],
 
 }
 

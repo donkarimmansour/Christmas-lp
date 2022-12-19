@@ -18,7 +18,6 @@ function LanguageSwitcher({isOpen , setIsOpen}) {
     push({ pathname, query }, asPath, { locale: lcl })
   }
 
-console.log(otherLocales);
 
 
   return (

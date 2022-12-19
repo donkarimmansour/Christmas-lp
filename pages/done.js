@@ -2,6 +2,9 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Loader from '../components/Loader';
 import dynamic from 'next/dynamic';
+import Header from "../components/CHRISTMAS/Header";
+import Footer from "../components/CHRISTMAS/Footer";
+import ScrollTopAndComment from "../components/ScrollTopAndComment";
 const Done = dynamic(() => import("../components/CHRISTMAS/Done"), {  
   ssr: false,
    loading: () => <Loader />, 
@@ -52,7 +55,8 @@ export default done
 
    return { 
      props: {
-       ...(await serverSideTranslations(lcl, ['common' , 'message'])),
+       ...(await serverSideTranslations(lcl,
+        ['common' , 'footer' , 'header' , 'message' ])),
      }, 
    };
  } 

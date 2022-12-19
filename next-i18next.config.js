@@ -1,9 +1,9 @@
-import path from 'path'
+const path = require('path') 
 
-export default {
+module.exports = {
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ar', 'fr'],
+    locales: ['en', 'ar', 'fr' , 'es'],
     //localeDetection: false, 
 
     // domains: [

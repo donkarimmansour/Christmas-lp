@@ -1,19 +1,24 @@
 import Image from "next/image"
+import { useTranslation } from "react-i18next"
 
 const Footer = () => {
-  return (
+  const { t } = useTranslation('footer')
+ 
+  return (  
     <footer className="footer section">
       <div className="container">
         <div className="footer__container">
           <div className="footer__content">
             <a href="#" className="footer__logo">
-              <Image width={200} height={200} src="/imgs/logo.png" alt="" /> Christmas
+              <Image width={200} height={200} src="/imgs/logo.png" alt="" /> {t(`text1`)}
             </a>
             <p className="footer__description">
-              This Christmas give <br />
-              a lot of love
+            {t(`text2`)} <br />
+            {t(`text3`)}
             </p>
-          </div>
+          </div> 
+
+{/*           
           <div className="footer__content">
             <h3 className="footer__title">Our Services</h3>
             <ul className="footer__list">
@@ -28,7 +33,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="footer__content">
+          <div className="footer__content"> 
             <h3 className="footer__title">Support</h3>
             <ul className="footer__list">
               <li>
@@ -41,8 +46,8 @@ const Footer = () => {
                 <a href="#" className="footer__link">Contact Us</a>
               </li>
             </ul>
-          </div>
-          <div className="footer__content">
+          </div>*/}
+          {/* <div className="footer__content">
             <h3 className="footer__title">Available On</h3>
             <div className="footer__button-container">
               <button className="footer__button">
@@ -61,13 +66,13 @@ const Footer = () => {
               </button>
             </div>
           </div>
+          */}
           <Image width={200} height={200} src="/imgs/footer1.png" alt="" className="footer__img-left" />
           <Image width={200} height={200} src="/imgs/footer2.png" alt="" className="footer__img-right" />
         </div>
         <p className="footer__copy">
           © 2022 coded by
-          <a href="https://github.com/soroushmdn" target="_blank">Soroush Karimi.</a>
-          Design from Bedimcode.
+          <a href="#" target="_blank"> christmas dev.</a>
         </p>
       </div>
     </footer>

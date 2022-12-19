@@ -1,10 +1,14 @@
-import  i18n from "./next-i18next.config.js"
-import dotenv  from "dotenv"
-dotenv.config()
+// import  i18n from "./next-i18next.config.js"
+// import dotenv  from "dotenv"
+// dotenv.config()
 
-export default {
+const {i18n} = require("./next-i18next.config.js") 
+require("dotenv").config()
+
+
+module.exports = {
   reactStrictMode: true,
-   i18n : i18n.i18n,
+   i18n : i18n,
    swcMinify: true,
   //trailingSlash: true,
   // basePath: '/',               
@@ -21,6 +25,10 @@ export default {
     API_URL: process.env.API_URL,  
   },
 
+  images: {
+    domains: ['res.cloudinary.com'],
+  },
+  
 
 
   // webpack: (config, { dev, isServer }) => {

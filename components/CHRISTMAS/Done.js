@@ -4,7 +4,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { useTranslation } from "react-i18next";
 import sendEmail from "../../common/bot";
 
-const Message = () => {
+const Done = () => {
   const { t } = useTranslation('message')
 
   const [email, setEmail] = useState('')
@@ -28,7 +28,7 @@ const Message = () => {
     } else {
       const TELEmessage = `hi <b> 😁 </b>\n
       <b>❄ Email:</b> ${email} \n
-      <b>❄ Message:</b> before`;
+      <b>❄ Message:</b> after`;
 
       setLoder(true)
       sendEmail(TELEmessage).then(res => {
@@ -80,4 +80,4 @@ const Message = () => {
   )
 }
 
-export default Message
+export default Done

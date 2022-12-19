@@ -1,7 +1,8 @@
 {
-    "title" : "العنوان" ,
-    "description" : "الوصف" ,
-    "en-name" : "الإنجليزية" ,
-    "fr-name" : "الفرنسية" ,
-    "ar-name" : "العربية" 
+    "title" : "title" ,
+    "description" : "description" ,
+    "en-name" : "English" ,
+    "fr-name" : "French" ,
+    "ar-name" : "Arabic" ,
+    "es-name" : "اسبانيا" 
 }

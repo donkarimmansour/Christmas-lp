@@ -8,14 +8,12 @@ const sitemap = {
         policies: [
           {
             userAgent: "*",
-            disallow: ["/404" , '/server-sitemap.xml'],
+            disallow: ["/404"]
           },
           { userAgent: "*", allow: "/" },
         ],
         additionalSitemaps: [
-          `${siteUrl}/sitemap.xml`,
-          `${siteUrl}/server-sitemap/index.xml`,
-          `${siteUrl}/server-sitemap/generate.xml`,
+          `${siteUrl}/sitemap.xml`
         ],
       },
     };

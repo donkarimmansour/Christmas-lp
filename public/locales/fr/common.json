@@ -1,7 +1,8 @@
 {
-    "title" : "titre" ,
+    "title" : "title" ,
     "description" : "description" ,
     "en-name" : "English" ,
-    "fr-name" : "français" ,
-    "ar-name" : "arabe" 
+    "fr-name" : "French" ,
+    "ar-name" : "Arabic" ,
+    "es-name" : "Espagne" 
 }
